@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Hand Gesture App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Grape+Nuts&family=Hurricane&display=swap"
+        rel="stylesheet">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="btn btn-warning" style="font-size : 30px; font-weight:bold">Hand Gesture App
+        <br>
+        <span>&#128078;</span>
+        <span>&#9995;</span>
+        <span>&#128076;</span>
+        <span>&#128075;</span>
+        <span>&#128077;</span>
+    </h1>
+    <h4 style="font-size : 30px; font-weight:bold">Take your selfie and generate Gesture</h4>
+    <h3 style="font-size : 30px; font-weight:bold;color: rgba(6, 255, 81, 0.993);">Victory!</h3>
+    <h3 style="font-size : 30px; font-weight:bold;color: yellow;">Superb!</h3>
+    <h3 style="font-size : 30px; font-weight:bold;color: red;">All the best!</h3>
+    <div id="Webcam">
+        <h5 style="font-size : 30px; font-weight:bold">Webcam View</h5>
+        <div id="pic"></div>
+        <button id="b_1" style="font-size : 30px; font-weight:bold" onclick="snapshot()">Capture image</button>
+    </div>
+
+    <div id="Snap">
+        <h5 style="font-size : 30px; font-weight:bold">Snapshot View</h5>
+        <div id="Snp"></div>
+        <button id="b_2" style="font-size : 30px; font-weight:bold" onclick="check()">Predict Gesture</button>
+    </div>
+    <div>
+        <h5 style="font-size : 30px; font-weight:bold">Prediction 1</h5>
+        <h5 id="p1-name" style="font-size : 30px; font-weight:bold"></h5>
+        <h5 id="p1-emoji" style="font-size : 30px; font-weight:bold"></h5>
+
+        <h5 style="font-size : 30px; font-weight:bold">Prediction 2</h5>
+        <h5 id="p2-name" style="font-size : 30px; font-weight:bold"></h5>
+        <h5 id="p2-emoji" style="font-size : 30px; font-weight:bold"></h5>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

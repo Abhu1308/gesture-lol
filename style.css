@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(aqua, pink);
+    text-align: center;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#Webcam {
+    float: left;
+    margin: 10px;
+}
+
+#Snap {
+    float: right;
+    margin: 10px;
+}
+#pic {
+    width: 400px;
+    height: 400px;
+}
+#Snp {
+    width: 400px;
+    height: 400px;
+}
